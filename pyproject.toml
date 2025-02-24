@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jellyupdate"
+version = "0.1.0"
+description = ""
+authors = ["James R <YRZR0@pm.me>"]
+readme = "README.md"
+packages = [{ include = "beetsplug" }]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+beets = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[poetry.group.dev.dependencies]
+ruff = "^0.0.1"
