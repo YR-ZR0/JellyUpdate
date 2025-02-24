@@ -29,7 +29,7 @@ jobs:
 
       - run: poetry env use ${{ steps.setup-python.outputs.python-path }}
 
-      - run: poetry install
+      - run: poetry install --all-groups
 
       - run: poetry run ruff format --check
 
