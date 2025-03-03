@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "jellyupdate"
 version = "0.1.0"
-description = ""
+description = "A beets plugin to update Jellyfin"
 authors = ["James R <YRZR0@pm.me>"]
 readme = "README.md"
 packages = [{ include = "beetsplug" }]
@@ -16,5 +16,6 @@ beets = "^2.2.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[poetry.group.dev.dependencies]
-ruff = "^0.0.1"
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.9"
+pytest = "^8.3.4"
