@@ -7,12 +7,15 @@ JellyUpdate is a plugin for [Beets](https://beets.io/) that allows you to manual
 1. Clone the repository:
 
    ```sh
-   git clone /path/to/JellyUpdate
+   git clone git@github.com:YR-ZR0/JellyUpdate.git
    ```
 
 2. Install the plugin:
 
-TODO: Add instructions for installing the plugin
+   ```sh
+   cd JellyUpdate
+   pip install .
+   ```
 
 3. Enable the plugin in your Beets configuration file (`config.yaml`):
 
@@ -22,7 +25,7 @@ TODO: Add instructions for installing the plugin
    jellyupdate:
      apikey: YOUR_JELLYFIN_API_KEY
      url: http://your.jellyfin.server
-     secure: true # Set to false if using HTTPS self-signed certificate
+     secure: true
    ```
 
 ## Usage
@@ -39,7 +42,7 @@ JellyUpdate also listens for the events `cli_exit` and `database_change` to auto
 
 - `apikey`: Your Jellyfin API key.
 - `url`: The URL of your Jellyfin server.
-- `secure`: Set to `true` if your Jellyfin server uses HTTPS, otherwise `false`.
+- `secure`: Set to `false` if your Jellyfin server uses a Self-signed certificate HTTPS, otherwise `true`.
 
 ## License
 
