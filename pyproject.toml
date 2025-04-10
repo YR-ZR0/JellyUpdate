@@ -1,21 +1,27 @@
-[tool.poetry]
+[project]
 name = "jellyupdate"
 version = "0.1.0"
 description = "A beets plugin to update Jellyfin"
-authors = ["James R <YRZR0@pm.me>"]
+authors = [{ name = "James R", email = "YRZR0@pm.me" }]
+requires-python = "~=3.13"
 readme = "README.md"
-packages = [{ include = "beetsplug" }]
+dependencies = [
+    "requests>=2.32.3,<3",
+    "beets>=2.2.0,<3",
+]
 
-[tool.poetry.dependencies]
-python = "^3.13"
-requests = "^2.32.3"
-beets = "^2.2.0"
+[dependency-groups]
+dev = [
+    "ruff>=0.11.2,<0.12",
+    "pytest>=8.3.5,<9",
+]
 
+[tool.hatch.build.targets.sdist]
+include = ["beetsplug"]
+
+[tool.hatch.build.targets.wheel]
+include = ["beetsplug"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.11.2"
-pytest = "^8.3.5"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
