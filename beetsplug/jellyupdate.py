@@ -25,7 +25,7 @@ class JellyUpdate(BeetsPlugin):
         )
         return headers
 
-    def update_jellyfin(self, lib, opts, args):
+    def update_jellyfin(self, lib=None, opts=None, args=None):
         if not self.config["secure"].get():
             urllib3.disable_warnings(category=urllib3.exceptions.InsecureRequestWarning)
 
