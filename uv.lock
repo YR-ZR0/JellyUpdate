@@ -4,7 +4,7 @@ requires-python = ">=3.12, <4"
 
 [[package]]
 name = "beets"
-version = "2.3.1"
+version = "2.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
@@ -16,11 +16,12 @@ dependencies = [
     { name = "numpy" },
     { name = "platformdirs" },
     { name = "pyyaml" },
+    { name = "typing-extensions" },
     { name = "unidecode" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b5/c5/7a328e8049874fb7799b32bb268c29408c7ca2f2326d7c5c83c3985519a6/beets-2.3.1.tar.gz", hash = "sha256:87598721a14af89a06d5ad3d9e8138f8ac112510271a981a90b840ed784d5712", size = 2133246, upload-time = "2025-05-14T09:54:29.902Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/32/2b5ae0038c442e783b4f00b4145b15357a2f2358fd985c60a1f890751bb0/beets-2.5.1.tar.gz", hash = "sha256:7feefd70804fbcf26516089f472bac34c6a77e8e20ec539252fd1bafc91de9a2", size = 2147257, upload-time = "2025-10-14T22:52:55.631Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/09/f0/ea6f82fe6a58ee057c7caaa465a639ff353f11d61accb6dd2b8879f15d52/beets-2.3.1-py3-none-any.whl", hash = "sha256:d779f5e3403c43f5d65b9719bcbd9540d1eb04edf0be9cb985171f3266942e25", size = 559449, upload-time = "2025-05-14T09:54:28.146Z" },
+    { url = "https://files.pythonhosted.org/packages/62/26/c459ae5217a69d1a2c83ddb80b61480764e990049b7d9f6a5b82660457f4/beets-2.5.1-py3-none-any.whl", hash = "sha256:3e58f33d898d007e6bfd385bd145d2c39325ef6b6f831f7269d037bbcb542bf7", size = 573677, upload-time = "2025-10-14T22:52:53.728Z" },
 ]
 
 [[package]]
@@ -381,6 +382,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d9/3a/a647fa4f316482dacf2fd68e8a386327a33d6eabd8eb2f9a0c3d291ec549/ruff-0.11.2-py3-none-win32.whl", hash = "sha256:aca01ccd0eb5eb7156b324cfaa088586f06a86d9e5314b0eb330cb48415097cc", size = 10319835, upload-time = "2025-03-21T13:31:10.7Z" },
     { url = "https://files.pythonhosted.org/packages/86/54/3c12d3af58012a5e2cd7ebdbe9983f4834af3f8cbea0e8a8c74fa1e23b2b/ruff-0.11.2-py3-none-win_amd64.whl", hash = "sha256:3170150172a8f994136c0c66f494edf199a0bbea7a409f649e4bc8f4d7084080", size = 11373713, upload-time = "2025-03-21T13:31:13.148Z" },
     { url = "https://files.pythonhosted.org/packages/d6/d4/dd813703af8a1e2ac33bf3feb27e8a5ad514c9f219df80c64d69807e7f71/ruff-0.11.2-py3-none-win_arm64.whl", hash = "sha256:52933095158ff328f4c77af3d74f0379e34fd52f175144cefc1b192e7ccd32b4", size = 10441990, upload-time = "2025-03-21T13:31:15.206Z" },
+]
+
+[[package]]
+name = "typing-extensions"
+version = "4.15.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac84269196e94cf00f187f7ed21c242792a923cdb1c61f/typing_extensions-4.15.0.tar.gz", hash = "sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466", size = 109391, upload-time = "2025-08-25T13:49:26.313Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548", size = 44614, upload-time = "2025-08-25T13:49:24.86Z" },
 ]
 
 [[package]]
