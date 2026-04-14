@@ -8,7 +8,7 @@ readme = "README.md"
 dependencies = ["requests>=2.32.3,<3", "beets>=2.2.0,<3"]
 
 [dependency-groups]
-dev = ["ruff>=0.15.10,<0.16", "pytest>=8.3.5,<10"]
+dev = ["ruff>=0.15.10,<0.16", "pytest>=9.0.3,<10"]
 
 [tool.hatch.build.targets.sdist]
 include = ["beetsplug"]
