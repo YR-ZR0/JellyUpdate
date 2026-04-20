@@ -5,7 +5,7 @@ description = "A beets plugin to update Jellyfin"
 authors = [{ name = "James R", email = "YRZR0@pm.me" }]
 requires-python = "~=3.12"
 readme = "README.md"
-dependencies = ["requests>=2.32.3,<3", "beets>=2.2.0,<3"]
+dependencies = ["requests>=2.32.3,<3", "beets>=2.10.0,<3"]
 
 [dependency-groups]
 dev = ["ruff>=0.15.10,<0.16", "pytest>=9.0.3,<10"]
