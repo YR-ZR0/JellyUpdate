@@ -1,3 +1,5 @@
+
+
 # JellyUpdate Beets Plugin
 
 JellyUpdate is a plugin for [Beets](https://beets.io/) that allows you to manually update your Jellyfin library whenever there is a change in your Beets database.
@@ -20,7 +22,8 @@ JellyUpdate is a plugin for [Beets](https://beets.io/) that allows you to manual
 3. Enable the plugin in your Beets configuration file (`config.yaml`):
 
    ```yaml
-   plugins: jellyupdate
+   plugins:
+     - jellyupdate
 
    jellyupdate:
      apikey: YOUR_JELLYFIN_API_KEY
